@@ -1,59 +1,135 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="200" alt="Laravel Logo">
+  
+  # 📚 Pena Pustaka 
+  **Sistem Informasi Perpustakaan Digital Modern**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  Project Uji Kompetensi Keahlian (UKK) - Rekayasa Perangkat Lunak (RPL)
 
-## About Laravel
+  [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+  [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+  [![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=white)](https://alpinejs.dev)
+  [![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📖 Tentang Project
+**Pena Pustaka** adalah aplikasi manajemen perpustakaan digital berbasis web yang dikembangkan untuk mempermudah sirkulasi peminjaman buku di sekolah. Dibangun dengan fokus pada antarmuka yang modern (UI) dan pengalaman pengguna yang mulus (UX) menggunakan **Tailwind CSS** dan interaktivitas **Alpine.js**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Aplikasi ini tidak hanya mencatat peminjaman, tetapi juga memiliki alur kerja (*workflow*) persetujuan pengembalian yang adil, perhitungan denda otomatis, dan sistem ulasan buku.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## ✨ Fitur Unggulan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 👨‍💻 Panel Admin (Petugas)
+* **Manajemen Data Induk:** CRUD data Buku, Kategori, dan Anggota (Siswa) dengan validasi relasi data yang aman.
+* **Sirkulasi Cerdas:** Mengelola peminjaman dan pengembalian dengan sistem *3-Tabs Workflow* (Sedang Dipinjam, Menunggu Validasi, Riwayat).
+* **Validasi Pengembalian:** Memverifikasi pengembalian dari siswa, mengecek kondisi fisik buku (Baik/Rusak/Hilang), dan memproses denda keterlambatan secara otomatis.
+* **Manajemen Stok Real-time:** Stok buku otomatis berkurang saat dipinjam dan bertambah saat dikembalikan.
 
-## Laravel Sponsors
+### 🎓 Panel Siswa (Anggota)
+* **Katalog Interaktif:** Pencarian buku dan filter kategori dengan tampilan *Grid Card* yang responsif.
+* **Peminjaman Mandiri:** Mengajukan peminjaman buku langsung dari katalog.
+* **Pengembalian "Stop the Clock":** Mengajukan pengembalian secara mandiri dari dashboard untuk menghentikan perhitungan waktu denda, menunggu verifikasi fisik oleh admin.
+* **Sistem Ulasan (Rating):** Memberikan bintang (1-5) dan komentar pada buku yang telah selesai dibaca (Logika: 1 Buku = 1 Ulasan per Siswa).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🛠️ Teknologi yang Digunakan
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+* **Backend:** [Laravel](https://laravel.com/) (PHP Framework)
+* **Frontend:** Blade Templating, [Tailwind CSS](https://tailwindcss.com/) (Styling), [Alpine.js](https://alpinejs.dev/) (DOM Manipulation & Modals)
+* **Database:** MySQL
+* **Icons:** Bootstrap Icons
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🚀 Panduan Instalasi (Setup Lokal)
 
-## Code of Conduct
+Ikuti langkah-langkah berikut untuk menjalankan project ini di komputer Anda.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Persyaratan Sistem
+* PHP >= 8.1
+* Composer
+* Node.js & NPM
+* MySQL / MariaDB
 
-## Security Vulnerabilities
+### Langkah Instalasi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/nyomangedewisaya/pena-pustaka.git
+   ```
 
-## License
+2. **Install Dependensi PHP**
+   ```bash
+   composer install
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+3. **Setup Environment File**
+   Duplikat file .env.example menjadi .env, lalu konfigurasi koneksi database Anda.
+   ```bash
+   cp .env.example .env
+   ```
+
+   Buka `.env` dan sesuaikan:
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=pena_pustaka
+   DB_USERNAME=root
+   DB_PASSWORD=    # sesuaikan jika ada password
+   ```
+
+4. **Generate Application Key**
+   ```bash
+   php artisan generate:key
+   ```
+   
+5. **Migrasi Database & Seeding (Data Dummy)**
+   ```bash
+   php artisan migrate --seed
+   ```
+
+6. **Link Storage (Untuk Gambar Cover Buku)**
+   ```bash
+   php artisan storage:link
+   ```
+
+7. **Install Dependensi Frontend & Compile Assets**
+   ```bash
+   npm install
+   npm run build
+   ```
+
+8. **Jalankan Server Lokal**
+   ```bash
+   php artisan serve
+   ```
+   Aplikasi dapat diakses pada `http://localhost:8000`.
+
+## 🔐 Akun Default (Testing)
+
+Gunakan kredensial berikut untuk masuk ke dalam sistem setelah menjalankan *Seeder*:
+
+| Role | Username | Password |
+| :--- | :--- | :--- |
+| **Admin** | `admin-penpus` | `admin1234` |
+
+> **Catatan:** Pastikan Anda menyesuaikan data seeder jika menggunakan kredensial yang berbeda dan untuk student anda wajib registrasi terlebih dahulu.
+
+---
+
+## 🧑‍💻 Pengembang
+
+Dikembangkan oleh **Nyoman Gede Wisaya** sebagai syarat kelulusan Uji Kompetensi Keahlian (UKK) Rekayasa Perangkat Lunak Tahun 2026.
+
+* **Asal Sekolah:** SMKS Pangudi Luhur Seputih Mataram
+* **GitHub:** `https://github.com/nyomangedewisaya`
+
+<br>
+
+<p align="center">Dibuat dengan ❤️ dan ☕ di Indonesia</p>
